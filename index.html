@@ -60,6 +60,35 @@ border:2px solid rgba(212,175,55,.25);
 border-radius:160px 160px 0 0;
 z-index:0;
 }
+.crescent{
+font-size:28px;
+color:#d4af37;
+margin-bottom:5px;
+animation:glow 4s infinite;
+}
+.stars{
+position:absolute;
+top:60px;
+left:50%;
+transform:translateX(-50%);
+width:420px;
+pointer-events:none;
+z-index:1;
+}
+
+.star{
+position:absolute;
+color:#d4af37;
+font-size:14px;
+animation:twinkle 3s infinite;
+}
+
+.star:nth-child(1){top:20px;left:20px;}
+.star:nth-child(2){top:80px;right:10px;}
+.star:nth-child(3){top:180px;left:0;}
+.star:nth-child(4){top:260px;right:20px;}
+.star:nth-child(5){top:330px;left:30px;}
+  
 .bismillah{
 color:#d4af37;
 font-size:18px;
@@ -76,6 +105,17 @@ text-shadow:0 0 20px rgba(212,175,55,.4);
 animation:glow 3s infinite; 
 }
 
+@keyframes twinkle{
+0%,100%{
+opacity:.3;
+transform:scale(1);
+}
+50%{
+opacity:1;
+transform:scale(1.4);
+}
+}
+  
 .subtitle{
 font-size:20px;
 font-weight:300;
@@ -244,6 +284,14 @@ font-size:32px;
 <body>
 <section class="hero">
 <div class="hero-content">
+<div class="stars">
+<span class="star">✦</span>
+<span class="star">✦</span>
+<span class="star">✦</span>
+<span class="star">✦</span>
+<span class="star">✦</span>
+</div>
+<div class="crescent">☾</div>
 <div class="bismillah">
 ‎بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
 </div>
