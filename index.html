@@ -56,9 +56,10 @@ margin-bottom:20px;
 
 h1{
 font-family:'Cinzel',serif;
-font-size:60px;
+font-size:72px;
 color:#d4af37;
 text-shadow:0 0 20px rgba(212,175,55,.4);
+animation:glow 3s infinite; 
 }
 
 .subtitle{
@@ -188,6 +189,17 @@ transform:translateY(20px);
 to{
 opacity:1;
 transform:translateY(0);
+}
+
+@keyframes glow{
+0%{
+text-shadow:0 0 10px rgba(212,175,55,.3);
+}
+50%{
+text-shadow:0 0 30px rgba(212,175,55,.9);
+}
+100%{
+text-shadow:0 0 10px rgba(212,175,55,.3);
 }
 }
 
