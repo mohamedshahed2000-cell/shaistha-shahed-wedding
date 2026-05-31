@@ -319,17 +319,42 @@ transition:.3s ease;
 .venue-btn:hover{
 background:#d4af37;
 color:white;
-} 
-.events{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+
+.gallery-header{
+  text-align:center;
+  padding:40px 20px 60px;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+.gallery-subtitle{
+  color:#d4af37;
+  font-size:16px;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  margin-bottom:15px;
+  font-family:'Cinzel', serif;
+}
+
+.gallery-title{
+  color:#0f4d3c; /* dark green */
+  font-size:52px;
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.gallery-description{
+  max-width:700px;
+  margin:0 auto;
+  color:#555;
+  font-size:22px;
+  line-height:1.8;
+}
+
+.gallery-line{
+  width:180px;
+  height:3px;
+  background:#d4af37;
+  margin:35px auto 0;
 }
 
 .gallery img{
@@ -686,11 +711,24 @@ Open Google Maps
 </section>
 <section>
 
-<h2 class="section-title">
-Gallery
-</h2>
+<div class="gallery-header">
 
-<div class="gallery">
+  <p class="gallery-subtitle">
+    MEMORIES & MOMENTS
+  </p>
+
+  <h2 class="gallery-title">
+    The Gallery of Love
+  </h2>
+
+  <p class="gallery-description">
+    A serene virtual glimpse into the warm moments and lovely chapters that decorate our union.
+  </p>
+
+  <div class="gallery-line"></div>
+
+</div>
+</section>
 
 <img src="./8e68da58-60d0-438f-b13c-7505d463b4d4.jpeg">
 
