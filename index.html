@@ -181,13 +181,41 @@ display:block;
 }
 
 .card{
-background:white;
-color:#222;
+background:rgba(255,255,255,0.55);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(212,175,55,.35);
+border-radius:30px;
+
 padding:30px;
-border-radius:20px;
-border:1px solid rgba(212,175,55,.3);
+margin:25px 0;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08),
+0 0 20px rgba(212,175,55,.12);
+
+transition:.4s ease;
 }
 
+.card:hover{
+transform:translateY(-5px);
+box-shadow:
+0 15px 35px rgba(0,0,0,.12),
+0 0 25px rgba(212,175,55,.25);
+}
+.card h3{
+font-family:'Cinzel',serif;
+color:#d4af37;
+font-size:30px;
+margin-bottom:15px;
+}
+
+.card p{
+color:#444;
+font-size:18px;
+line-height:1.8;
+}
+  
 .events{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
