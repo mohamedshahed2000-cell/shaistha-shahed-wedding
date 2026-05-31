@@ -388,9 +388,33 @@ transition:.3s ease;
 transform:translateY(-3px);
 box-shadow:0 15px 35px rgba(37,211,102,.35);
 }
+.rsvp-select{
+width:100%;
+max-width:500px;
+padding:18px 20px;
+font-size:20px;
+border:1px solid rgba(212,175,55,.25);
+border-radius:20px;
+background:white;
+color:#0f4d3c;
+margin-top:20px;
+}
+
+.rsvp-main-btn{
+display:inline-block;
+padding:20px 40px;
+background:#0f4d3c;
+color:#d4af37;
+text-decoration:none;
+border-radius:25px;
+font-size:22px;
+font-family:'Cinzel', serif;
+cursor:pointer;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
   
 .map-btn,
-.whatsapp-btn,
+.whatsapp-btn{
 display:inline-block;
 padding:15px 30px;
 background:#d4af37;
@@ -706,30 +730,36 @@ Request the honour of your presence
 </section>
 
 <section>
+
 <h2 class="section-title">RSVP</h2>
 
-<div class="card rsvp-box">
+<div class="rsvp-box">
 
 <p>
 We would be honoured to celebrate this special day with you.
 Kindly confirm your presence via WhatsApp.
 </p>
 
-<a href="https://wa.me/918248050004"
-class="rsvp-btn"
-target="_blank">
-RSVP with Groom
-</a>
+<select id="rsvpContact" class="rsvp-select">
 
-<br>
+<option value="https://wa.me/918248050004">
+Groom
+</option>
 
-<a href="https://wa.me/919444294947"
-class="rsvp-btn"
-target="_blank">
-RSVP with Groom's Family
+<option value="https://wa.me/919444294937">
+Groom's family
+</option>
+
+</select>
+
+<br><br>
+
+<a id="rsvpButton" class="rsvp-main-btn">
+Send RSVP via WhatsApp
 </a>
 
 </div>
+
 </section>
 
 <section>
@@ -783,6 +813,13 @@ Math.floor((distance%(1000*60))/1000);
 },1000);
 
 </script>
+<script>
+const rsvpSelect = document.getElementById('rsvpContact');
+const rsvpButton = document.getElementById('rsvpButton');
 
+rsvpButton.addEventListener('click', () => {
+    window.open(rsvpSelect.value, '_blank');
+});
+</script>
 </body>
 </html>
