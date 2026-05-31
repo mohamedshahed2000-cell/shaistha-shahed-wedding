@@ -187,7 +187,7 @@ backdrop-filter:blur(12px);
 border:1px solid rgba(212,175,55,.35);
 border-radius:30px;
 
-padding:30px;
+padding:24px;
 margin:25px 0;
 
 box-shadow:
@@ -215,7 +215,25 @@ color:#444;
 font-size:18px;
 line-height:1.8;
 }
-  
+.venue-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 22px;
+
+border:1px solid #d4af37;
+border-radius:30px;
+
+color:#d4af37;
+text-decoration:none;
+font-weight:600;
+
+transition:.3s ease;
+}
+
+.venue-btn:hover{
+background:#d4af37;
+color:white;
+} 
 .events{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -395,14 +413,17 @@ Wedding Events
 <p>26 July 2026</p>
 <p>After Asr Prayer</p>
 <p>4:00 PM – 5:00 PM</p>
+<a href="#" class="venue-btn">View Venue</a>
 </div>
 
 <div class="card">
   <h3>🎉 Reception</h3>
   <p>26 July 2026</p>
   <p>6:30 PM Onwards</p>
+  <a href="#" class="venue-btn">View Venue</a>
 </div>
 
+</div>
 <div class="events">
 
 <div class="card">
