@@ -1,956 +1,923 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohamed Shahed & Shaistha | Wedding Invitation</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shaistha & Shahed | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;900&family=Amiri:ital,wght@0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"/>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-
-    background-color:#fffaf2;
-
-    background-image:
-    linear-gradient(
-    180deg,
-    rgba(248,238,216,0.5),
-    rgba(255,250,242,0.5)
-    ),
-    linear-gradient(
-    30deg,
-    rgba(212,175,55,.04) 12%,
-    transparent 12.5%,
-    transparent 87%,
-    rgba(212,175,55,.04) 87.5%
-    ),
-    linear-gradient(
-    150deg,
-    rgba(212,175,55,.02) 12%,
-    transparent 12.5%,
-    transparent 87%,
-    rgba(212,175,55,.02) 87.5%
-    );
-
-    background-size:100% 100%, 80px 80px, 80px 80px;
-
-    color:#222;
-    overflow-x:hidden;
-}
-
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
-url('./8e68da58-60d0-438f-b13c-7505d463b4d4.jpeg');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-color:white;
-max-width:900px;
-animation:fadeIn 2s ease;
-}
-.hero-content::before{
-content:'';
-position:absolute;
-top:-40px;
-left:50%;
-transform:translateX(-50%);
-width:300px;
-height:340px;
-border:2px solid rgba(212,175,55,.25);
-border-radius:160px 160px 0 0;
-z-index:0;
-}
-.crescent{
-font-size:28px;
-color:#d4af37;
-margin-bottom:5px;
-animation:glow 4s infinite;
-}
-.stars{
-position:absolute;
-top:60px;
-left:50%;
-transform:translateX(-50%);
-width:420px;
-pointer-events:none;
-z-index:1;
-}
-
-.star{
-position:absolute;
-color:#d4af37;
-font-size:14px;
-animation:twinkle 3s infinite;
-}
-
-.star:nth-child(1){top:20px;left:20px;}
-.star:nth-child(2){top:80px;right:10px;}
-.star:nth-child(3){top:180px;left:0;}
-.star:nth-child(4){top:260px;right:20px;}
-.star:nth-child(5){top:330px;left:30px;}
-  
-.bismillah{
-color:#d4af37;
-font-size:18px;
-letter-spacing:3px;
-margin-bottom:20px;
-}
-
-h1{
-font-family:'Cinzel',serif;
-font-size:40px;
-line-height:1.1;
-color:#d4af37;
-text-shadow:0 0 20px rgba(212,175,55,.4);
-animation:glow 3s infinite; 
-}
-
-@keyframes twinkle{
-0%,100%{
-opacity:.3;
-transform:scale(1);
-}
-50%{
-opacity:1;
-transform:scale(1.4);
-}
-}
-  
-.subtitle{
-font-size:20px;
-font-weight:300;
-line-height:1.6;
-}
-
-.date{
-font-size:28px;
-font-weight:bold;
-border:1px solid rgba(212,175,55,.4);
-border-radius:50px;
-padding:20px 40px;
-
-background: transparent;
-backdrop-filter:blur(6px);
-
-margin-top:40px;
-}
-
-section{
-padding:90px 25px;
-max-width:1200px;
-margin:auto;
-}
-
-.section-title{
-font-family:'Cinzel',serif;
-font-size:42px;
-color:#d4af37;
-text-align:center;
-margin-bottom:40px;
-}
-
-.story{
-color:#333;
-text-align:center;
-line-height:1.9;
-font-size:18px;
-max-width:850px;
-margin:auto;
-}
-
-.countdown{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.time-box{
-background:white;
-color:#222;
-padding:25px;
-border-radius:18px;
-width:120px;
-text-align:center;
-border:1px solid rgba(212,175,55,.2);
-}
-
-.time-box span{
-font-size:35px;
-font-weight:bold;
-color:#d4af37;
-display:block;
-}
-
-.card{
-background:rgba(255,255,255,0.55);
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(212,175,55,.35);
-border-radius:30px;
-
-padding:24px;
-margin:25px 0;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,.08),
-0 0 20px rgba(212,175,55,.12);
-
-transition:.4s ease;
-}
-
-.card:hover{
-transform:translateY(-5px);
-box-shadow:
-0 15px 35px rgba(0,0,0,.12),
-0 0 25px rgba(212,175,55,.25);
-}
-
-.card{
-text-align:center;
-}
-  
-.card h3{
-font-family:'Cinzel',serif;
-color:#d4af37;
-font-size:30px;
-margin-bottom:15px;
-}
-
-.ayah-ref{
-color:#d4af37;
-font-weight:600;
-font-size:22px;
-}
-
-.card p{
-color:#444;
-font-size:20px;
-} 
-
-.family-label{
-  color:#d4af37;
-  letter-spacing:4px;
-  font-size:14px;
-  text-transform:uppercase;
-  margin-bottom:15px;
-}
-
-.family-name{
-  font-family:'Cinzel', serif;
-  color:#d4af37;
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-.gold-line{
-  width:120px;
-  height:2px;
-  background:#d4af37;
-  margin:20px auto 40px;
-}
-
-.parent-label{
-  color:#999;
-  letter-spacing:3px;
-  font-size:14px;
-  text-transform:uppercase;
-  margin-top:25px;
-}
-
-.parent-name{
-  color:#444;
-  font-size:24px;
-  margin-top:10px;
-}
-  
-.family-divider{
-text-align:center;
-font-size:26px;
-color:#d4af37;
-margin:10px 0;
-letter-spacing:12px;
-}
-  
-.venue-btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 22px;
-
-border:1px solid #d4af37;
-border-radius:30px;
-
-color:#d4af37;
-text-decoration:none;
-font-weight:600;
-
-transition:.3s ease;
-}
-
-.venue-btn:hover{
-background:#d4af37;
-color:white;
-} 
-.events{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-height:320px;
-object-fit:cover;
-border-radius:15px;
-cursor:pointer;
-transition:.4s;
-}
-
-.gallery img:hover{
-transform:scale(1.03);
-}
-
-.couple-blessing{
-text-align:center;
-padding:80px 20px;
-}
-
-.couple-names{
-font-family:'Cinzel', serif;
-font-size:48px;
-color:#d4af37;
-line-height:1.5;
-margin:25px 0;
-}
-
-.blessing-text{
-font-size:22px;
-color:#666;
-letter-spacing:1px;
-}
-
-.save-date-section{
-    text-align:center;
-    padding:80px 20px;
-}
-
-.save-date-card{
-    max-width:600px;
-    margin:auto;
-
-    background:white;
-    border:1px solid rgba(212,175,55,.25);
-    border-radius:40px;
-
-    padding:50px 30px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.05);
-}
-
-.save-date-small{
-    font-family:'Cinzel', serif;
-    color:#d4af37;
-    letter-spacing:5px;
-    margin-bottom:20px;
-}
-
-.save-date-main{
-    font-family:'Cinzel', serif;
-    color:#0f4d3c;
-    font-size:48px;
-    margin-bottom:15px;
-}
-
-.save-date-text{
-    font-size:22px;
-    color:#666;
-}
-
-#loader{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-
-    background:#f8f4ea;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    z-index:99999;
-}
-
-.loader-content{
-    text-align:center;
-}
-
-.loader-content h1{
-    font-family:'Cinzel', serif;
-    color:#d4af37;
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.loader-content p{
-    color:#0f4d3c;
-    font-size:20px;
-    letter-spacing:2px;
-}
-  
-.rsvp-box{
-text-align:center;
-padding:50px 30px;
-
-background:white;
-border:1px solid rgba(212,175,55,.25);
-border-radius:40px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.06);
-
-max-width:700px;
-margin:0 auto;
-}
-
-.rsvp-box p{
-margin-bottom:30px;
-}
-
-.ayah-ref{
-color:#d4af37;
-font-weight:600;
-}
-
-.card h2{
-font-family:'Cinzel', serif;
-color:#d4af37;
-font-size:42px;
-margin-bottom:25px;
-}
-
-.rsvp-btn{
-display:inline-block;
-padding:16px 35px;
-background:#d4af37;
-color:black;
-text-decoration:none;
-font-size:20px;
-font-weight:600;
-border-radius:50px;
-margin:10px 0;
-
-width:100%;
-max-width:420px;
-box-sizing:border-box;
-
-text-align:center;
-transition:.3s ease;
-}
-
-.rsvp-btn:hover{
-transform:translateY(-3px);
-box-shadow:0 15px 35px rgba(37,211,102,.35);
-}
-.rsvp-select{
-width:100%;
-max-width:500px;
-padding:18px 20px;
-font-size:20px;
-border:1px solid rgba(212,175,55,.25);
-border-radius:20px;
-background:white;
-color:#0f4d3c;
-margin-top:20px;
-}
-
-.rsvp-main-btn{
-display:inline-block;
-padding:20px 40px;
-background:#0f4d3c;
-color:#d4af37;
-text-decoration:none;
-border-radius:25px;
-font-size:22px;
-font-family:'Cinzel', serif;
-cursor:pointer;
-box-shadow:0 8px 25px rgba(0,0,0,.15);
-}
-  
-.map-btn,
-.whatsapp-btn{
-display:inline-block;
-padding:15px 30px;
-background:#d4af37;
-color:black;
-font-weight:bold;
-text-decoration:none;
-border-radius:50px;
-margin:10px;
-}
-
-.contact{
-text-align:center;
-font-size:20px;
-line-height:2;
-}
-
-footer{
-padding:80px 30px;
-text-align:center;
-background:transparent;
-border-top:1px solid rgba(212,175,55,.25);
-}
-
-footer p{
-color:#666;
-font-size:20px;
-line-height:1.8;
-}
-
-footer h2{
-color:#d4af37;
-font-family:'Cinzel', serif;
-font-size:42px;
-margin-bottom:25px;
-}
-
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-@keyframes glow{
-0%{
-text-shadow:0 0 10px rgba(212,175,55,.3);
-}
-50%{
-text-shadow:0 0 30px rgba(212,175,55,.9);
-}
-100%{
-text-shadow:0 0 10px rgba(212,175,55,.3);
-}
-}
-
-@media(max-width:768px){
-
-h1{
-font-size:36px;
-line-height:1.1;
-}
-
-.subtitle{
-font-size:18px;
-}
-
-.date{
-font-size:22px;
-}
-
-.section-title{
-font-size:32px;
-}
-
-}
-
+:root{
+  --e1:#071810;--e2:#0A2E1A;--e3:#115C34;--e4:#1A7A47;--em:#22A05B;--el:#4DC68A;
+  --g1:#BF8C30;--g2:#D4A843;--g3:#E8C46A;--g4:#F5DA8E;--gl:#FDF0C4;
+  --ivory:#FDFAF0;--cream:#FEFCF4;--ink:#071810;--text:#1A3D28;--textm:#2D5C40;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--e1);color:var(--gl);font-family:'Cormorant Garamond',serif;overflow-x:hidden}
+
+/* ══ MUSIC BTN ══ */
+#mbtn{position:fixed;bottom:1.8rem;right:1.5rem;z-index:9000;width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(135deg,var(--e3),var(--g1));box-shadow:0 4px 20px rgba(10,46,26,.6),0 0 0 2px rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;animation:mPulse 2.5s ease-in-out infinite}
+@keyframes mPulse{0%,100%{box-shadow:0 4px 20px rgba(10,46,26,.5),0 0 0 2px rgba(212,168,67,.3)}50%{box-shadow:0 4px 30px rgba(34,160,91,.7),0 0 0 8px rgba(212,168,67,.1)}}
+#mbtn svg{width:20px;height:20px;fill:#fff}
+#mbtn .pi{display:block}#mbtn .pai{display:none}
+#mbtn.playing .pi{display:none}#mbtn.playing .pai{display:block}
+
+/* ══ LIGHTBOX ══ */
+#lb{display:none;position:fixed;inset:0;z-index:9999;background:rgba(3,9,5,.97);align-items:center;justify-content:center}
+#lb.open{display:flex}
+#lb img{max-width:92vw;max-height:92svh;object-fit:contain}
+#lbx{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--g4);font-size:2.8rem;cursor:pointer;font-family:'Cormorant Garamond',serif;line-height:1}
+
+/* ══ REVEAL ANIMATIONS ══ */
+.rv{opacity:0;transform:translateY(60px);transition:opacity 1.2s cubic-bezier(.16,1,.3,1),transform 1.2s cubic-bezier(.16,1,.3,1)}
+.rv.on{opacity:1;transform:none}
+.rvl{opacity:0;transform:translateX(-70px);transition:opacity 1.1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1)}
+.rvl.on{opacity:1;transform:none}
+.rvr{opacity:0;transform:translateX(70px);transition:opacity 1.1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1)}
+.rvr.on{opacity:1;transform:none}
+.rv-scale{opacity:0;transform:scale(.88);transition:opacity 1.3s cubic-bezier(.16,1,.3,1),transform 1.3s cubic-bezier(.16,1,.3,1)}
+.rv-scale.on{opacity:1;transform:none}
+
+/* ══ FLOATING PETALS ══ */
+#petal-cv{position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.35}
+
+/* ═══════════════════════════════
+   SECTION 1 — HERO (full screen night sky + mosque)
+═══════════════════════════════ */
+#hero{
+  position:relative;min-height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+  background:radial-gradient(ellipse 100% 60% at 50% 0%,#0A3020,transparent 60%),
+    radial-gradient(ellipse 80% 50% at 20% 80%,#051508,transparent 65%),
+    linear-gradient(180deg,#020A05 0%,#071810 40%,#091C12 70%,#020A05 100%);
+}
+#star-cv{position:absolute;inset:0;z-index:1;pointer-events:none}
+#three-cv{position:absolute;inset:0;z-index:2;pointer-events:none}
+.atm{position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:radial-gradient(ellipse 75% 45% at 50% 12%,rgba(26,122,71,.2),transparent 70%),
+    radial-gradient(ellipse 55% 35% at 50% 88%,rgba(212,168,67,.12),transparent 60%)}
+.moon{position:absolute;top:7%;right:15%;z-index:4;width:clamp(55px,7vw,80px);height:clamp(55px,7vw,80px);border-radius:50%;
+  background:radial-gradient(circle at 36% 34%,#FDFCF0,#EDD98A 50%,#C8A030);
+  box-shadow:0 0 40px rgba(237,217,138,.9),0 0 90px rgba(237,217,138,.5),0 0 160px rgba(26,122,71,.3);
+  animation:moonGlow 5s ease-in-out infinite;z-index:5}
+@keyframes moonGlow{0%,100%{box-shadow:0 0 40px rgba(237,217,138,.8),0 0 90px rgba(237,217,138,.5)}50%{box-shadow:0 0 70px rgba(237,217,138,1),0 0 150px rgba(237,217,138,.7),0 0 240px rgba(26,122,71,.4)}}
+.mosque-wrap{position:absolute;bottom:0;left:0;right:0;width:100%;height:58%;z-index:4;pointer-events:none}
+.hero-body{position:relative;z-index:6;padding:2rem 2rem 26%;display:flex;flex-direction:column;align-items:center}
+.bismillah{font-family:'Amiri',serif;font-weight:700;font-size:clamp(1.8rem,5.5vw,3.2rem);color:var(--gl);letter-spacing:.05em;text-shadow:0 0 30px rgba(245,218,142,.9),0 0 80px rgba(26,122,71,.5);animation:bGlow 4s ease-in-out infinite;margin-bottom:2rem}
+@keyframes bGlow{0%,100%{text-shadow:0 0 20px rgba(245,218,142,.8),0 0 60px rgba(26,122,71,.4)}50%{text-shadow:0 0 50px rgba(245,218,142,1),0 0 110px rgba(77,198,138,.6),0 0 180px rgba(26,122,71,.35)}}
+.h-eyebrow{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(.55rem,1.8vw,.75rem);letter-spacing:.55em;color:var(--el);text-transform:uppercase;margin-bottom:1.5rem;opacity:.9}
+.h-n1,.h-n2{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(3.2rem,12vw,8.5rem);line-height:.9;letter-spacing:.02em;background:linear-gradient(160deg,var(--gl) 0%,var(--g3) 30%,var(--el) 58%,var(--g4) 85%,var(--gl) 100%);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 2px 25px rgba(212,168,67,.5));animation:nSh 6s linear infinite}
+@keyframes nSh{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.h-weds{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:clamp(1.3rem,4vw,2.4rem);color:var(--em);display:block;margin:.35em 0;letter-spacing:.12em;text-shadow:0 0 25px rgba(34,160,91,.55)}
+.jewel-bar{display:flex;align-items:center;gap:.9rem;margin:1.8rem 0 1.2rem}
+.jl{width:clamp(40px,9vw,100px);height:1.5px;background:linear-gradient(90deg,transparent,var(--g3))}
+.jl.r{background:linear-gradient(90deg,var(--g3),transparent)}
+.jg{color:var(--g4);font-size:.85rem;letter-spacing:.15em;text-shadow:0 0 10px rgba(212,168,67,.7)}
+.h-date{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(.72rem,2.2vw,1rem);letter-spacing:.35em;color:var(--g4);text-shadow:0 0 12px rgba(212,168,67,.5)}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:7;display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:.45}
+.scroll-hint span{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.35em;color:var(--g3)}
+.scroll-hint .sline{width:1px;height:45px;background:linear-gradient(to bottom,var(--g3),transparent);animation:drip 2s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ═══════════════════════════════
+   SECTION 2 — STORY (dark, Taj Mahal silhouette BG)
+═══════════════════════════════ */
+#story{
+  position:relative;min-height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;padding:5rem 2rem;
+  background:linear-gradient(180deg,#020A05,#071810 30%,#091C12 70%,#020A05);
+}
+.story-monument{position:absolute;bottom:0;left:0;right:0;width:100%;height:45%;z-index:1;pointer-events:none;opacity:.55}
+.story-body{position:relative;z-index:2;max-width:750px;margin:0 auto}
+.sec-label{display:block;font-family:'Cinzel',serif;font-weight:700;font-size:clamp(.55rem,1.5vw,.7rem);letter-spacing:.55em;color:var(--el);text-transform:uppercase;margin-bottom:.9rem}
+.sec-title{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(2.2rem,6.5vw,4.5rem);line-height:1;letter-spacing:.03em;color:var(--gl);margin-bottom:1.8rem}
+.sec-title em{font-style:italic;background:linear-gradient(135deg,var(--el),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.orn-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;justify-content:center}
+.orn-line{flex:1;max-width:140px;height:1.5px;background:linear-gradient(90deg,transparent,rgba(77,198,138,.6))}
+.orn-line.r{background:linear-gradient(90deg,rgba(77,198,138,.6),transparent)}
+.orn-gem{font-size:.85rem;color:var(--g3);letter-spacing:.2em;opacity:.85}
+.verse-block{
+  padding:2.5rem 2.8rem;
+  background:linear-gradient(135deg,rgba(17,92,52,.15),rgba(212,168,67,.08));
+  border-top:2px solid rgba(77,198,138,.5);border-bottom:2px solid rgba(212,168,67,.4);
+  position:relative;margin:0 auto 2rem;max-width:680px;
+}
+.verse-block::before,.verse-block::after{content:'❧';position:absolute;color:var(--g3);font-size:1.2rem;opacity:.5}
+.verse-block::before{top:.5rem;left:.7rem}
+.verse-block::after{bottom:.5rem;right:.7rem;transform:scaleX(-1)}
+.verse-t{font-family:'Amiri',serif;font-style:italic;font-weight:700;font-size:clamp(1.1rem,2.8vw,1.35rem);color:var(--g4);line-height:2.1}
+.story-p{font-size:clamp(1.05rem,2.5vw,1.15rem);line-height:2.1;color:rgba(253,240,196,.7);font-weight:600;max-width:640px;margin:0 auto}
+
+/* ═══════════════════════════════
+   SECTION 3 — COUNTDOWN (Alhambra BG)
+═══════════════════════════════ */
+#countdown{
+  position:relative;min-height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+  background:linear-gradient(180deg,#020A05,#04120A 40%,#071810 70%,#020A05);
+}
+.cd-monument{position:absolute;bottom:0;left:0;right:0;width:100%;height:50%;z-index:1;pointer-events:none;opacity:.6}
+.cd-top-glow{position:absolute;top:0;left:0;right:0;height:50%;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(17,92,52,.3),transparent 70%);z-index:1;pointer-events:none}
+.cd-body{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:2rem}
+.cd-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:clamp(1rem,3vw,1.5rem);color:var(--el);margin-bottom:3rem}
+.cd-row{display:flex;justify-content:center;align-items:flex-end;flex-wrap:wrap;gap:clamp(1.5rem,4vw,3.5rem);margin-top:2.5rem}
+.cd-block{display:flex;flex-direction:column;align-items:center}
+.cd-num{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(4.5rem,13vw,8.5rem);line-height:1;background:linear-gradient(160deg,var(--gl),var(--g3),var(--el));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 25px rgba(212,168,67,.45))}
+.cd-unit{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(.58rem,1.4vw,.7rem);letter-spacing:.4em;color:var(--el);text-transform:uppercase;margin-top:.6rem;opacity:.85}
+.cd-dot{font-size:clamp(2.5rem,5vw,3.5rem);color:var(--g2);opacity:.25;padding-bottom:clamp(2rem,4vw,2.8rem);font-family:'Cinzel Decorative',serif}
+
+/* ═══════════════════════════════
+   SECTION 4 — EVENTS (full-screen cinematic cards)
+═══════════════════════════════ */
+#events{position:relative;overflow:hidden}
+.ev-section{
+  position:relative;min-height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+}
+/* Nikah — deep emerald mosque night */
+.ev-nikah{background:linear-gradient(180deg,#020A05,#071810 35%,#0A2E1A 65%,#020A05)}
+/* Reception — warm gold palace dusk */
+.ev-reception{background:linear-gradient(180deg,#0A0A02,#1A140A 35%,#2A1C06 65%,#0A0A02)}
+.ev-monument{position:absolute;bottom:0;left:0;right:0;width:100%;height:52%;z-index:1;pointer-events:none}
+.ev-top-glow-n{position:absolute;top:0;left:0;right:0;height:55%;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(10,46,26,.4),transparent 70%);z-index:1;pointer-events:none}
+.ev-top-glow-r{position:absolute;top:0;left:0;right:0;height:55%;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(42,28,6,.5),transparent 70%);z-index:1;pointer-events:none}
+.ev-body{position:relative;z-index:2;max-width:700px;margin:0 auto;padding:3rem 2rem 28%}
+.ev-emoji{font-size:clamp(3.5rem,8vw,5rem);display:block;margin-bottom:1.5rem;filter:drop-shadow(0 4px 20px rgba(0,0,0,.5));animation:iconFloat 4s ease-in-out infinite}
+@keyframes iconFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-12px) scale(1.05)}}
+.ev-title{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(2rem,7vw,4.5rem);line-height:1;letter-spacing:.03em;margin-bottom:1.5rem}
+.ev-title-n{background:linear-gradient(135deg,var(--gl),var(--el),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 2px 15px rgba(77,198,138,.3))}
+.ev-title-r{background:linear-gradient(135deg,var(--gl),var(--g3),#FFD700,var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 2px 15px rgba(212,168,67,.4))}
+.ev-detail{font-size:clamp(1.1rem,3vw,1.35rem);line-height:2.4;color:rgba(253,240,196,.8);font-weight:600;margin-bottom:2rem}
+.ev-time-badge{
+  display:inline-block;margin-bottom:1.8rem;
+  font-family:'Cinzel',serif;font-weight:700;font-size:clamp(.7rem,1.8vw,.85rem);letter-spacing:.25em;
+  color:var(--ink);
+  background:linear-gradient(135deg,var(--g4),var(--g2),var(--g3));
+  padding:.7rem 2.2rem;
+  box-shadow:0 6px 25px rgba(212,168,67,.4),0 0 0 1px rgba(212,168,67,.3);
+  clip-path:polygon(10px 0%,calc(100% - 10px) 0%,100% 50%,calc(100% - 10px) 100%,10px 100%,0% 50%);
+}
+.map-btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:'Cinzel',serif;font-weight:700;font-size:.72rem;letter-spacing:.18em;
+  color:var(--g3);text-decoration:none;
+  border:1.5px solid rgba(212,168,67,.35);
+  padding:.75rem 2rem;
+  transition:background .3s,color .3s,border-color .3s,box-shadow .3s;
+}
+.map-btn:hover{background:rgba(212,168,67,.12);border-color:var(--g2);color:var(--gl);box-shadow:0 0 20px rgba(212,168,67,.2)}
+
+/* ═══════════════════════════════
+   SECTION 5 — FAMILY (Cordoba Mosque BG)
+═══════════════════════════════ */
+#family{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#020A05,#071810 30%,#091C12 70%,#020A05);
+  padding:clamp(4rem,8vw,7rem) 0;
+}
+.fam-monument{position:absolute;bottom:0;left:0;right:0;width:100%;height:40%;z-index:1;pointer-events:none;opacity:.5}
+.fam-glow{position:absolute;top:0;left:0;right:0;height:40%;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(10,46,26,.25),transparent 70%);z-index:1;pointer-events:none}
+.fam-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:0 1.5rem;text-align:center}
+.fam-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+@media(max-width:540px){.fam-grid{grid-template-columns:1fr}}
+.fam-card{
+  padding:2.2rem 2rem;
+  border:1px solid rgba(77,198,138,.18);
+  background:linear-gradient(160deg,rgba(10,46,26,.45),rgba(7,24,16,.8));
+  position:relative;overflow:hidden;
+  backdrop-filter:blur(4px);
+}
+.fam-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--e3),var(--g2),var(--em),var(--g2),var(--e3))}
+.fam-card::after{content:'';position:absolute;bottom:0;left:1.5rem;right:1.5rem;height:1px;background:linear-gradient(90deg,transparent,var(--el),transparent);opacity:.4}
+.fam-card-gem{position:absolute;bottom:.6rem;right:.7rem;font-size:1.5rem;opacity:.08;color:var(--el);animation:gemSpin 10s linear infinite}
+@keyframes gemSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.fam-title{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(.62rem,1.5vw,.75rem);letter-spacing:.25em;color:var(--el);text-transform:uppercase;margin-bottom:1.5rem}
+.fam-entry{margin-bottom:1rem}
+.fam-role{font-family:'Cinzel',serif;font-weight:700;font-size:.58rem;letter-spacing:.3em;color:var(--g2);text-transform:uppercase;margin-bottom:.25rem;opacity:.85}
+.fam-name{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(.92rem,2.2vw,1.1rem);color:var(--gl);line-height:1.3}
+
+/* ═══════════════════════════════
+   COUPLE BANNER
+═══════════════════════════════ */
+#couple-banner{
+  position:relative;text-align:center;
+  padding:3rem 2rem 2rem;overflow:hidden;
+  background:linear-gradient(180deg,#020A05,#071810);
+}
+.couple-name-text{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(1.2rem,4vw,2.2rem);letter-spacing:.04em;background:linear-gradient(135deg,var(--g1),var(--g3),var(--em),var(--g3),var(--g1));background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:nSh 5s linear infinite}
+
+/* ═══════════════════════════════
+   SECTION 6 — VENUE (Blue Mosque silhouette)
+═══════════════════════════════ */
+#venue{
+  position:relative;min-height:80svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+  background:linear-gradient(180deg,#020A05,#071810 35%,#091C12 70%,#020A05);
+  padding:5rem 2rem;
+}
+.venue-monument{position:absolute;bottom:0;left:0;right:0;width:100%;height:45%;z-index:1;pointer-events:none;opacity:.55}
+.venue-glow{position:absolute;top:0;left:0;right:0;height:50%;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(17,92,52,.25),transparent 70%);z-index:1;pointer-events:none}
+.venue-body{position:relative;z-index:2;max-width:560px;margin:0 auto}
+.venue-card{padding:3rem 2.8rem;border:1px solid rgba(77,198,138,.2);background:linear-gradient(160deg,rgba(10,46,26,.5),rgba(7,24,16,.85));position:relative;overflow:hidden;backdrop-filter:blur(6px);margin-top:2rem}
+.venue-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--e3),var(--g2),var(--em),var(--g2),var(--e3))}
+.vc-cn::before,.vc-cn::after,.vc-c2::before,.vc-c2::after{content:'';position:absolute;width:22px;height:22px;border-color:rgba(77,198,138,.45);border-style:solid}
+.vc-cn::before{top:8px;left:8px;border-width:1.5px 0 0 1.5px}
+.vc-cn::after{top:8px;right:8px;border-width:1.5px 1.5px 0 0}
+.vc-c2::before{bottom:8px;left:8px;border-width:0 0 1.5px 1.5px}
+.vc-c2::after{bottom:8px;right:8px;border-width:0 1.5px 1.5px 0}
+.venue-name{font-family:'Cinzel Decorative',serif;font-weight:900;font-size:clamp(1.3rem,4vw,1.9rem);color:var(--gl);margin-bottom:1rem;line-height:1.2}
+.venue-addr{font-size:clamp(1rem,2.5vw,1.12rem);line-height:2.3;color:rgba(253,240,196,.7);font-weight:600}
+
+/* ═══════════════════════════════
+   GALLERY
+═══════════════════════════════ */
+#gallery{background:var(--e1);padding:0}
+.gal-head{text-align:center;padding:clamp(5rem,10vw,7rem) clamp(1.5rem,5vw,4rem) 2.5rem;background:linear-gradient(180deg,#020A05,#071810)}
+.gg{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;background:var(--e1)}
+@media(max-width:680px){.gg{grid-template-columns:repeat(2,1fr)}}
+.gi{position:relative;overflow:hidden;aspect-ratio:3/4;cursor:pointer}
+.gi:nth-child(1){grid-row:span 2;aspect-ratio:auto}
+.gi:nth-child(5){grid-column:span 2;aspect-ratio:16/7}
+.gi:nth-child(8){grid-row:span 2;aspect-ratio:auto}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .5s;filter:brightness(.85) saturate(.85)}
+.gi:hover img{transform:scale(1.1);filter:brightness(1.05) saturate(1.15)}
+.gov{position:absolute;inset:0;background:linear-gradient(to top,rgba(2,10,5,.8),transparent 55%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:1.2rem;opacity:0;transition:opacity .4s}
+.gi:hover .gov{opacity:1}
+.gov span{font-family:'Cinzel',serif;font-weight:700;font-size:.6rem;letter-spacing:.3em;color:var(--gl);border:1px solid rgba(245,218,142,.4);padding:.4rem 1rem}
+
+/* ═══════════════════════════════
+   RSVP + FOOTER
+═══════════════════════════════ */
+#rsvp{
+  position:relative;min-height:80svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+  background:linear-gradient(180deg,#020A05,#071810 35%,#0A2E1A 65%,#020A05);
+  padding:5rem 2rem;
+}
+.rsvp-monument{position:absolute;bottom:0;left:0;right:0;width:100%;height:40%;z-index:1;pointer-events:none;opacity:.5}
+.rsvp-body-wrap{position:relative;z-index:2;max-width:600px;margin:0 auto}
+.rsvp-p{font-size:clamp(1.05rem,2.5vw,1.2rem);line-height:2.1;color:rgba(253,240,196,.7);font-weight:600;margin-bottom:2.5rem}
+.wa-btn{display:inline-flex;align-items:center;gap:.9rem;background:linear-gradient(135deg,#0A5C38,#157A4A);color:#fff;text-decoration:none;font-family:'Cinzel',serif;font-weight:700;font-size:.75rem;letter-spacing:.2em;padding:1.2rem 3rem;box-shadow:0 8px 35px rgba(10,92,56,.5),0 0 0 1px rgba(21,122,74,.4);transition:transform .3s,box-shadow .3s}
+.wa-btn:hover{transform:translateY(-3px);box-shadow:0 16px 55px rgba(10,92,56,.7)}
+.wa-btn svg{width:1.3rem;height:1.3rem;flex-shrink:0}
+footer{background:linear-gradient(160deg,#020A05,#071810);text-align:center;padding:4.5rem 2rem 3rem;border-top:1px solid rgba(77,198,138,.12);position:relative;overflow:hidden}
+.ft-v{font-family:'Amiri',serif;font-style:italic;font-weight:700;font-size:clamp(1.1rem,3vw,1.35rem);color:var(--g4);line-height:2.3;max-width:640px;margin:0 auto 1rem}
+.ft-r{font-family:'Cinzel',serif;font-weight:700;font-size:.62rem;letter-spacing:.35em;color:var(--el);opacity:.7}
+.ft-n{margin-top:2.5rem;font-family:'Cinzel Decorative',serif;font-size:clamp(1.4rem,4vw,2.2rem);background:linear-gradient(135deg,var(--gl),var(--g3),var(--el));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ft-a{margin-top:1rem;font-family:'Cinzel',serif;font-weight:700;font-size:.63rem;letter-spacing:.3em;color:var(--el);opacity:.65}
 </style>
 </head>
 <body>
-<div id="loader">
 
-    <div class="loader-content">
+<audio id="bgm" loop><source src="song.mp3" type="audio/mpeg"/></audio>
+<button id="mbtn" onclick="toggleMusic()">
+  <svg class="pi" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  <svg class="pai" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+</button>
+<canvas id="petal-cv"></canvas>
+<div id="lb"><button id="lbx" onclick="closeLb()">×</button><img id="lbimg" src="" alt=""/></div>
 
-        <h1>Shaistha & Shahed</h1>
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <canvas id="star-cv"></canvas>
+  <canvas id="three-cv"></canvas>
+  <div class="atm"></div>
+  <div class="moon"></div>
+  <svg class="mosque-wrap" viewBox="0 0 1440 580" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".8"/><stop offset="55%" stop-color="#1A7A47" stop-opacity=".5"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <linearGradient id="gg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5DA8E" stop-opacity="1"/><stop offset="60%" stop-color="#D4A843" stop-opacity=".7"/><stop offset="100%" stop-color="#020A05" stop-opacity=".9"/></linearGradient>
+      <linearGradient id="fg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".92"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <radialGradient id="dg"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".22"/><stop offset="100%" stop-color="#4DC68A" stop-opacity="0"/></radialGradient>
+      <filter id="gf"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="sf"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <rect x="0" y="528" width="1440" height="52" fill="url(#fg)"/>
+    <ellipse cx="720" cy="528" rx="720" ry="45" fill="rgba(26,122,71,.1)"/>
+    <rect x="496" y="368" width="448" height="160" fill="url(#fg)" stroke="url(#sg)" stroke-width="1.2"/>
+    <path d="M508 528 L508 432 Q522 410 536 432 L536 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width=".9" opacity=".7"/>
+    <path d="M544 528 L544 432 Q558 410 572 432 L572 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width=".9" opacity=".7"/>
+    <path d="M580 528 L580 432 Q594 410 608 432 L608 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width=".9" opacity=".7"/>
+    <path d="M640 528 L640 415 Q660 388 680 415 L680 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".9"/>
+    <path d="M688 528 L688 415 Q708 388 728 415 L728 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".9"/>
+    <path d="M736 528 L736 415 Q756 388 776 415 L776 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".9"/>
+    <path d="M784 528 L784 415 Q804 388 824 415 L824 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".9"/>
+    <path d="M832 528 L832 432 Q846 410 860 432 L860 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width=".9" opacity=".7"/>
+    <path d="M868 528 L868 432 Q882 410 896 432 L896 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width=".9" opacity=".7"/>
+    <path d="M904 528 L904 432 Q918 410 932 432 L932 528" fill="url(#fg)" stroke="url(#gg2)" stroke-width=".9" opacity=".7"/>
+    <rect x="530" y="292" width="380" height="78" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".85"/>
+    <rect x="648" y="250" width="144" height="44" fill="url(#fg)" stroke="url(#sg)" stroke-width="1"/>
+    <ellipse cx="720" cy="250" rx="92" ry="84" fill="url(#fg)" stroke="url(#sg)" stroke-width="1.8" filter="url(#sf)"/>
+    <ellipse cx="720" cy="225" rx="110" ry="85" fill="url(#dg)" opacity=".6"/>
+    <line x1="720" y1="166" x2="720" y2="144" stroke="url(#gg2)" stroke-width="1.3" opacity=".95"/>
+    <ellipse cx="720" cy="158" rx="6" ry="5" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.1"/>
+    <path d="M716 141 Q720 130 724 141 Q720 135 716 141" fill="none" stroke="#F5DA8E" stroke-width="1.8" opacity="1" filter="url(#gf)"/>
+    <ellipse cx="604" cy="292" rx="58" ry="52" fill="url(#fg)" stroke="url(#sg)" stroke-width="1" opacity=".8"/>
+    <ellipse cx="836" cy="292" rx="58" ry="52" fill="url(#fg)" stroke="url(#sg)" stroke-width="1" opacity=".8"/>
+    <rect x="445" y="130" width="40" height="398" fill="url(#fg)" stroke="url(#sg)" stroke-width="1.1"/>
+    <rect x="432" y="168" width="66" height="9" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".85"/>
+    <rect x="432" y="272" width="66" height="9" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".85"/>
+    <rect x="432" y="368" width="66" height="8" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1" opacity=".75"/>
+    <path d="M445 130 L465 78 L485 130" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.3" opacity=".95"/>
+    <ellipse cx="465" cy="70" rx="13" ry="10" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2"/>
+    <path d="M461 54 Q465 43 469 54 Q465 48 461 54" fill="none" stroke="#F5DA8E" stroke-width="1.8" opacity="1" filter="url(#gf)"/>
+    <rect x="955" y="130" width="40" height="398" fill="url(#fg)" stroke="url(#sg)" stroke-width="1.1"/>
+    <rect x="942" y="168" width="66" height="9" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".85"/>
+    <rect x="942" y="272" width="66" height="9" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2" opacity=".85"/>
+    <rect x="942" y="368" width="66" height="8" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1" opacity=".75"/>
+    <path d="M955 130 L975 78 L995 130" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.3" opacity=".95"/>
+    <ellipse cx="975" cy="70" rx="13" ry="10" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1.2"/>
+    <path d="M971 54 Q975 43 979 54 Q975 48 979 54" fill="none" stroke="#F5DA8E" stroke-width="1.8" opacity="1" filter="url(#gf)"/>
+    <rect x="236" y="375" width="194" height="153" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".7"/>
+    <ellipse cx="333" cy="375" rx="64" ry="58" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".75"/>
+    <rect x="206" y="258" width="28" height="270" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".7"/>
+    <path d="M206 258 L220 220 L234 258" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1" opacity=".85"/>
+    <ellipse cx="220" cy="213" rx="10" ry="8" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1"/>
+    <path d="M217 200 Q220 191 223 200 Q220 195 217 200" fill="none" stroke="#F5DA8E" stroke-width="1.2" opacity=".85"/>
+    <rect x="1010" y="375" width="194" height="153" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".7"/>
+    <ellipse cx="1107" cy="375" rx="64" ry="58" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".75"/>
+    <rect x="1206" y="258" width="28" height="270" fill="url(#fg)" stroke="url(#sg)" stroke-width=".9" opacity=".7"/>
+    <path d="M1206 258 L1220 220 L1234 258" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1" opacity=".85"/>
+    <ellipse cx="1220" cy="213" rx="10" ry="8" fill="url(#fg)" stroke="url(#gg2)" stroke-width="1"/>
+    <path d="M1217 200 Q1220 191 1223 200 Q1220 195 1217 200" fill="none" stroke="#F5DA8E" stroke-width="1.2" opacity=".85"/>
+    <line x1="465" y1="528" x2="465" y2="560" stroke="#F5DA8E" stroke-width=".9" opacity=".22"/>
+    <line x1="720" y1="528" x2="720" y2="565" stroke="#F5DA8E" stroke-width="1.1" opacity=".28"/>
+    <line x1="975" y1="528" x2="975" y2="560" stroke="#F5DA8E" stroke-width=".9" opacity=".22"/>
+    <rect x="0" y="518" width="1440" height="14" fill="url(#fg)" opacity=".65"/>
+  </svg>
+  <div class="hero-body">
+    <p class="bismillah rv" style="transition-delay:.15s">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+    <p class="h-eyebrow rv" style="transition-delay:.3s">Together with our families · We joyfully invite you</p>
+    <div class="rv" style="transition-delay:.5s"><div class="h-n1">Shaistha</div><div class="h-weds">weds</div><div class="h-n2">Shahed</div></div>
+    <div class="jewel-bar rv" style="transition-delay:.72s"><div class="jl"></div><div class="jg">✦ ❋ ✦</div><div class="jl r"></div></div>
+    <p class="h-date rv" style="transition-delay:.85s">26 · July · 2026 &nbsp;·&nbsp; Sunday &nbsp;·&nbsp; 4:00 PM</p>
+  </div>
+  <div class="scroll-hint"><span>SCROLL</span><div class="sline"></div></div>
+</section>
 
-        <p>26 July 2026</p>
-
+<!-- ═══ STORY — Taj Mahal BG ═══ -->
+<section id="story">
+  <!-- Taj Mahal silhouette -->
+  <svg class="story-monument" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="tg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5DA8E" stop-opacity=".65"/><stop offset="70%" stop-color="#D4A843" stop-opacity=".35"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <linearGradient id="tf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".9"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+    </defs>
+    <!-- Main Taj dome -->
+    <ellipse cx="720" cy="180" rx="100" ry="92" fill="url(#tf)" stroke="url(#tg)" stroke-width="1.5"/>
+    <!-- Drum -->
+    <rect x="650" y="260" width="140" height="35" fill="url(#tf)" stroke="url(#tg)" stroke-width="1"/>
+    <!-- Platform -->
+    <rect x="540" y="295" width="360" height="125" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9"/>
+    <!-- Arched iwans -->
+    <path d="M620 420 L620 330 Q660 295 700 330 L700 420" fill="url(#tf)" stroke="url(#tg)" stroke-width="1.1" opacity=".85"/>
+    <path d="M740 420 L740 330 Q780 295 820 330 L820 420" fill="url(#tf)" stroke="url(#tg)" stroke-width="1.1" opacity=".85"/>
+    <!-- Finial + crescent -->
+    <line x1="720" y1="88" x2="720" y2="68" stroke="url(#tg)" stroke-width="1.4"/>
+    <ellipse cx="720" cy="80" rx="7" ry="5" fill="url(#tf)" stroke="url(#tg)" stroke-width="1.2"/>
+    <path d="M716 64 Q720 54 724 64 Q720 58 716 64" fill="none" stroke="#F5DA8E" stroke-width="1.8"/>
+    <!-- Side chattris (small domes) -->
+    <ellipse cx="600" cy="280" rx="35" ry="30" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9" opacity=".75"/>
+    <ellipse cx="840" cy="280" rx="35" ry="30" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9" opacity=".75"/>
+    <!-- 4 minarets -->
+    <rect x="470" y="220" width="22" height="200" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9" opacity=".8"/>
+    <path d="M470 220 L481 190 L492 220" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9"/>
+    <ellipse cx="481" cy="183" rx="8" ry="7" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9"/>
+    <path d="M478 170 Q481 162 484 170 Q481 165 478 170" fill="none" stroke="#F5DA8E" stroke-width="1.2"/>
+    <rect x="948" y="220" width="22" height="200" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9" opacity=".8"/>
+    <path d="M948 220 L959 190 L970 220" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9"/>
+    <ellipse cx="959" cy="183" rx="8" ry="7" fill="url(#tf)" stroke="url(#tg)" stroke-width=".9"/>
+    <path d="M956 170 Q959 162 962 170 Q959 165 956 170" fill="none" stroke="#F5DA8E" stroke-width="1.2"/>
+    <rect x="320" y="270" width="18" height="150" fill="url(#tf)" stroke="url(#tg)" stroke-width=".7" opacity=".5"/>
+    <path d="M320 270 L329 248 L338 270" fill="url(#tf)" stroke="url(#tg)" stroke-width=".7"/>
+    <rect x="1102" y="270" width="18" height="150" fill="url(#tf)" stroke="url(#tg)" stroke-width=".7" opacity=".5"/>
+    <path d="M1102 270 L1111 248 L1120 270" fill="url(#tf)" stroke="url(#tg)" stroke-width=".7"/>
+    <!-- Reflecting pool -->
+    <rect x="560" y="400" width="320" height="20" fill="rgba(212,168,67,.08)"/>
+    <line x1="720" y1="400" x2="720" y2="420" stroke="#F5DA8E" stroke-width=".7" opacity=".15"/>
+    <rect x="0" y="408" width="1440" height="12" fill="url(#tf)" opacity=".8"/>
+  </svg>
+  <div class="story-body">
+    <div class="orn-row rv"><div class="orn-line"></div><div class="orn-gem">✦ ❋ ✦</div><div class="orn-line r"></div></div>
+    <span class="sec-label rv">Our Story</span>
+    <h2 class="sec-title rv">A journey written<br/><em>by His mercy</em></h2>
+    <div class="verse-block rv">
+      <p class="verse-t">"And among His signs is that He created for you spouses from among yourselves that you may find tranquility in them, and He placed between you affection and mercy."</p>
     </div>
-
-</div>
-<section class="hero">
-<div class="hero-content">
-<div class="stars">
-<span class="star">✦</span>
-<span class="star">✦</span>
-<span class="star">✦</span>
-<span class="star">✦</span>
-<span class="star">✦</span>
-</div>
-<div class="crescent">☾</div>
-<div class="bismillah">
-‎بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
-</div>
-<h1>
-Mohamed Shahed<br>
-&<br>
-Shaistha
-</h1>
-<p class="subtitle">
-Together with our families,<br>
-request the honour of your presence<br>
-at our Wedding Celebration
-</p>
-<div class="date">
-26 July 2026
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">
-Our Story
-</h2>
-<div class="story">
-“And among His signs is that He created for you spouses from among yourselves that you may find tranquility in them, and He placed between you affection and mercy.”
-By the grace and mercy of Allah (SWT), we begin a beautiful journey together filled with faith, love, happiness and endless blessings.
-We warmly invite you and your family to celebrate our Nikah and Reception, and bless our union with your prayers and presence.
-</div>
+    <p class="story-p rv">By the grace and mercy of Allah (SWT), we begin a beautiful journey together filled with faith, love, happiness and endless blessings. We warmly invite you and your family to celebrate our Nikah and Reception, and bless us with your prayers and presence.</p>
+  </div>
 </section>
 
-<section>
-
-<h2 class="section-title">
-Countdown To Nikah
-</h2>
-
-<div class="countdown">
-
-<div class="time-box">
-<span id="days">0</span>
-Days
-</div>
-
-<div class="time-box">
-<span id="hours">0</span>
-Hours
-</div>
-
-<div class="time-box">
-<span id="minutes">0</span>
-Minutes
-</div>
-
-<div class="time-box">
-<span id="seconds">0</span>
-Seconds
-</div>
-
-</div>
-
+<!-- ═══ COUNTDOWN — Alhambra BG ═══ -->
+<section id="countdown">
+  <!-- Alhambra / Granada Mosque silhouette -->
+  <svg class="cd-monument" viewBox="0 0 1440 460" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="ag" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".6"/><stop offset="60%" stop-color="#1A7A47" stop-opacity=".35"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <linearGradient id="af" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".9"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+    </defs>
+    <!-- Alhambra Palace towers and battlements -->
+    <!-- Left fortress tower -->
+    <rect x="50" y="220" width="80" height="240" fill="url(#af)" stroke="url(#ag)" stroke-width=".8" opacity=".65"/>
+    <rect x="40" y="210" width="100" height="18" fill="url(#af)" stroke="url(#ag)" stroke-width=".8" opacity=".65"/>
+    <!-- Battlements -->
+    <rect x="44" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <rect x="66" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <rect x="88" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <rect x="110" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <!-- Central palace -->
+    <rect x="280" y="180" width="880" height="280" fill="url(#af)" stroke="url(#ag)" stroke-width="1" opacity=".75"/>
+    <!-- Grand arcade of horseshoe arches -->
+    <path d="M300 460 L300 340 Q322 308 344 340 L344 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M352 460 L352 340 Q374 308 396 340 L396 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M404 460 L404 340 Q426 308 448 340 L448 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M456 460 L456 340 Q478 308 500 340 L500 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M508 460 L508 340 Q530 308 552 340 L552 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M560 460 L560 340 Q582 308 604 340 L604 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M612 460 L612 340 Q634 308 656 340 L656 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M664 460 L664 340 Q686 308 708 340 L708 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M716 460 L716 340 Q738 308 760 340 L760 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M768 460 L768 340 Q790 308 812 340 L812 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M820 460 L820 340 Q842 308 864 340 L864 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M872 460 L872 340 Q894 308 916 340 L916 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M924 460 L924 340 Q946 308 968 340 L968 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M976 460 L976 340 Q998 308 1020 340 L1020 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M1028 460 L1028 340 Q1050 308 1072 340 L1072 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <path d="M1080 460 L1080 340 Q1102 308 1124 340 L1124 460" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".7"/>
+    <!-- Central tower of Comares -->
+    <rect x="640" y="80" width="160" height="260" fill="url(#af)" stroke="url(#ag)" stroke-width="1.2" opacity=".9"/>
+    <rect x="628" y="72" width="184" height="18" fill="url(#af)" stroke="url(#ag)" stroke-width="1" opacity=".85"/>
+    <!-- Comares tower battlements -->
+    <rect x="630" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <rect x="654" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <rect x="678" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <rect x="702" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <rect x="726" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <rect x="750" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <rect x="774" y="58" width="16" height="16" fill="url(#af)" stroke="url(#ag)" stroke-width=".9" opacity=".8"/>
+    <!-- Central arch on Comares -->
+    <path d="M688 340 L688 170 Q720 135 752 170 L752 340" fill="url(#af)" stroke="url(#ag)" stroke-width="1.2" opacity=".9"/>
+    <!-- Right fortress tower -->
+    <rect x="1310" y="220" width="80" height="240" fill="url(#af)" stroke="url(#ag)" stroke-width=".8" opacity=".65"/>
+    <rect x="1300" y="210" width="100" height="18" fill="url(#af)" stroke="url(#ag)" stroke-width=".8" opacity=".65"/>
+    <rect x="1304" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <rect x="1326" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <rect x="1348" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <rect x="1370" y="198" width="14" height="14" fill="url(#af)" stroke="url(#ag)" stroke-width=".7" opacity=".6"/>
+    <!-- Ground line -->
+    <rect x="0" y="448" width="1440" height="12" fill="url(#af)" opacity=".9"/>
+    <!-- Light reflections -->
+    <line x1="720" y1="448" x2="720" y2="460" stroke="#4DC68A" stroke-width=".8" opacity=".18"/>
+  </svg>
+  <div class="cd-top-glow"></div>
+  <div class="cd-body">
+    <div class="orn-row rv" style="justify-content:center"><div class="orn-line"></div><div class="orn-gem" style="color:var(--g4)">✦ ◆ ✦</div><div class="orn-line r"></div></div>
+    <span class="sec-label rv">Save the Date</span>
+    <h2 class="sec-title rv">26 July 2026</h2>
+    <p class="cd-sub rv">Sunday · 4:00 PM</p>
+    <div class="cd-row rv">
+      <div class="cd-block"><div class="cd-num" id="cd-d">--</div><div class="cd-unit">Days</div></div>
+      <div class="cd-dot">·</div>
+      <div class="cd-block"><div class="cd-num" id="cd-h">--</div><div class="cd-unit">Hours</div></div>
+      <div class="cd-dot">·</div>
+      <div class="cd-block"><div class="cd-num" id="cd-m">--</div><div class="cd-unit">Minutes</div></div>
+      <div class="cd-dot">·</div>
+      <div class="cd-block"><div class="cd-num" id="cd-s">--</div><div class="cd-unit">Seconds</div></div>
+    </div>
+  </div>
 </section>
 
-<section class="save-date-section">
-
-  <div class="save-date-card">
-
-    <p class="save-date-small">
-      SAVE THE DATE
-    </p>
-
-    <h2 class="save-date-main">
-      26 JULY 2026
-    </h2>
-
-    <p class="save-date-text">
-      Sunday • 4:00 PM
-    </p>
-
+<!-- ═══ EVENTS ═══ -->
+<section id="events">
+  <!-- NIKAH — Masjid al-Nabawi night -->
+  <div class="ev-section ev-nikah">
+    <svg class="ev-monument" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ng" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".75"/><stop offset="60%" stop-color="#22A05B" stop-opacity=".4"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+        <linearGradient id="ngg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5DA8E" stop-opacity=".9"/><stop offset="100%" stop-color="#020A05" stop-opacity=".8"/></linearGradient>
+        <linearGradient id="nf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".92"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+        <radialGradient id="ndg"><stop offset="0%" stop-color="#22A05B" stop-opacity=".3"/><stop offset="100%" stop-color="#22A05B" stop-opacity="0"/></radialGradient>
+        <filter id="ngf"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Masjid al-Nabawi — green dome -->
+      <rect x="520" y="300" width="400" height="200" fill="url(#nf)" stroke="url(#ng)" stroke-width="1"/>
+      <!-- Arches -->
+      <path d="M530 500 L530 380 Q548 355 566 380 L566 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".65"/>
+      <path d="M574 500 L574 380 Q592 355 610 380 L610 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".65"/>
+      <path d="M618 500 L618 380 Q636 355 654 380 L654 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".65"/>
+      <path d="M658 500 L658 375 Q680 346 702 375 L702 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".8"/>
+      <path d="M706 500 L706 375 Q728 346 750 375 L750 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".8"/>
+      <path d="M754 500 L754 375 Q776 346 798 375 L798 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".8"/>
+      <path d="M802 500 L802 380 Q820 355 838 380 L838 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".65"/>
+      <path d="M846 500 L846 380 Q864 355 882 380 L882 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".65"/>
+      <path d="M890 500 L890 380 Q908 355 926 380 L926 500" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".65"/>
+      <!-- THE GREEN DOME of Prophet's Mosque -->
+      <ellipse cx="720" cy="230" rx="95" ry="85" fill="url(#nf)" stroke="url(#ng)" stroke-width="2" filter="url(#ngf)"/>
+      <!-- Green glow on dome -->
+      <ellipse cx="720" cy="210" rx="110" ry="80" fill="url(#ndg)" opacity=".7"/>
+      <!-- Drum -->
+      <rect x="652" y="302" width="136" height="42" fill="url(#nf)" stroke="url(#ng)" stroke-width="1"/>
+      <!-- Dome finial -->
+      <line x1="720" y1="145" x2="720" y2="122" stroke="url(#ngg)" stroke-width="1.4"/>
+      <ellipse cx="720" cy="136" rx="7" ry="5" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.2"/>
+      <path d="M716 118 Q720 107 724 118 Q720 112 716 118" fill="none" stroke="#F5DA8E" stroke-width="2" opacity="1" filter="url(#ngf)"/>
+      <!-- Two tall umbrella minarets (Nabawi style) -->
+      <rect x="448" y="140" width="36" height="360" fill="url(#nf)" stroke="url(#ng)" stroke-width="1"/>
+      <rect x="436" y="178" width="60" height="10" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".85"/>
+      <rect x="436" y="270" width="60" height="10" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".85"/>
+      <rect x="436" y="360" width="60" height="9" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1" opacity=".75"/>
+      <!-- Pencil top -->
+      <path d="M448 140 L466 94 L484 140" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.3"/>
+      <ellipse cx="466" cy="86" rx="12" ry="10" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.2"/>
+      <path d="M462 70 Q466 59 470 70 Q466 64 462 70" fill="none" stroke="#F5DA8E" stroke-width="1.9" filter="url(#ngf)"/>
+      <rect x="956" y="140" width="36" height="360" fill="url(#nf)" stroke="url(#ng)" stroke-width="1"/>
+      <rect x="944" y="178" width="60" height="10" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".85"/>
+      <rect x="944" y="270" width="60" height="10" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.1" opacity=".85"/>
+      <rect x="944" y="360" width="60" height="9" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1" opacity=".75"/>
+      <path d="M956 140 L974 94 L992 140" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.3"/>
+      <ellipse cx="974" cy="86" rx="12" ry="10" fill="url(#nf)" stroke="url(#ngg)" stroke-width="1.2"/>
+      <path d="M970 70 Q974 59 978 70 Q974 64 970 70" fill="none" stroke="#F5DA8E" stroke-width="1.9" filter="url(#ngf)"/>
+      <!-- Side small minarets -->
+      <rect x="240" y="260" width="24" height="240" fill="url(#nf)" stroke="url(#ng)" stroke-width=".8" opacity=".6"/>
+      <path d="M240 260 L252 228 L264 260" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".75"/>
+      <ellipse cx="252" cy="222" rx="8" ry="6" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9"/>
+      <path d="M249 209 Q252 201 255 209 Q252 204 249 209" fill="none" stroke="#F5DA8E" stroke-width="1.2"/>
+      <rect x="1176" y="260" width="24" height="240" fill="url(#nf)" stroke="url(#ng)" stroke-width=".8" opacity=".6"/>
+      <path d="M1176 260 L1188 228 L1200 260" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9" opacity=".75"/>
+      <ellipse cx="1188" cy="222" rx="8" ry="6" fill="url(#nf)" stroke="url(#ngg)" stroke-width=".9"/>
+      <path d="M1185 209 Q1188 201 1191 209 Q1188 204 1185 209" fill="none" stroke="#F5DA8E" stroke-width="1.2"/>
+      <!-- Ground -->
+      <rect x="0" y="488" width="1440" height="12" fill="url(#nf)" opacity=".9"/>
+      <!-- Light reflections -->
+      <ellipse cx="466" cy="490" rx="30" ry="8" fill="rgba(77,198,138,.08)"/>
+      <ellipse cx="720" cy="490" rx="55" ry="10" fill="rgba(77,198,138,.1)"/>
+      <ellipse cx="974" cy="490" rx="30" ry="8" fill="rgba(77,198,138,.08)"/>
+    </svg>
+    <div class="ev-top-glow-n"></div>
+    <div class="ev-body">
+      <span class="ev-emoji rv">🕌❤️‍🔥</span>
+      <h2 class="ev-title ev-title-n rv">Nikah<br/>Ceremony</h2>
+      <div class="ev-detail rv">26 July 2026<br/>After Asr Prayer<br/>4:00 PM – 5:00 PM</div>
+      <div class="ev-time-badge rv">Sunday · 4:00 PM</div><br/>
+      <a href="https://maps.app.goo.gl/UUnWfrcYRrZaSsDm6?g_st=ic" target="_blank" class="map-btn rv">📍 Open in Google Maps</a>
+    </div>
   </div>
 
-</section>
-  
-<section>
-
-<h2 class="section-title">
-Wedding Events
-</h2>
-
-<div class="events">
-
-<div class="card">
-<h3>🕌❤️‍🔥 Nikah Ceremony</h3>
-<p>26 July 2026</p>
-<p>After Asr Prayer</p>
-<p>4:00 PM – 5:00 PM</p>
-<a href="https://maps.app.goo.gl/UUnWfrcYRrZaSsDm6?g_st=ic"
-   class="venue-btn"
-   target="_blank">
-   📍 Open in Google Maps
-</a>
-</div>
-
-<div class="card">
-  <h3>🕺🪩 Reception</h3>
-  <p>26 July 2026</p>
-  <p>6:30 PM Onwards</p>
-  <a href="https://maps.app.goo.gl/UUnWfrcYRrZaSsDm6?g_st=ic"
-   class="venue-btn"
-   target="_blank">
-   📍 Open in Google Maps
-</a>
-</div>
-
-</div>
-<div class="events">
-
-<div class="card">
-
-  <p class="family-label">
-    PARENTAGE OF THE GROOM
-  </p>
-
-  <h3 class="family-name">
-    Mohamed Shahed's Family
-  </h3>
-
-  <div class="gold-line"></div>
-
-  <p class="parent-label">FATHER</p>
-  <p class="parent-name">A. Liaquath Ali</p>
-
-  <p class="parent-label">MOTHER</p>
-  <p class="parent-name">V. Farthimunnisa</p>
-
-</div>
-<div class="family-divider">
-✦ ❈ ✦
-</div>
-
-<div class="card">
-
-  <p class="family-label">
-    PARENTAGE OF THE BRIDE
-  </p>
-
-  <h3 class="family-name">
-    Shaistha's Family
-  </h3>
-
-  <div class="gold-line"></div>
-
-  <p class="parent-label">FATHER</p>
-  <p class="parent-name">A. Yunus Khan</p>
-
-  <p class="parent-label">MOTHER</p>
-  <p class="parent-name">Y. Shama</p>
-
-</div>
-
+  <!-- RECEPTION — Ottoman Palace warm dusk -->
+  <div class="ev-section ev-reception">
+    <svg class="ev-monument" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="rg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5DA8E" stop-opacity=".8"/><stop offset="60%" stop-color="#D4A843" stop-opacity=".45"/><stop offset="100%" stop-color="#0A0A02" stop-opacity="1"/></linearGradient>
+        <linearGradient id="rf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0A0A02" stop-opacity=".92"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+        <radialGradient id="rdg"><stop offset="0%" stop-color="#D4A843" stop-opacity=".28"/><stop offset="100%" stop-color="#D4A843" stop-opacity="0"/></radialGradient>
+        <filter id="rgf"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Blue Mosque / Sultanahmet -->
+      <rect x="460" y="310" width="520" height="190" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.1"/>
+      <!-- Grand arches -->
+      <path d="M475 500 L475 395 Q496 368 517 395 L517 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".95" opacity=".7"/>
+      <path d="M525 500 L525 395 Q546 368 567 395 L567 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".95" opacity=".7"/>
+      <path d="M575 500 L575 390 Q598 360 621 390 L621 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.1" opacity=".85"/>
+      <path d="M629 500 L629 385 Q656 351 683 385 L683 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.2" opacity=".9"/>
+      <path d="M691 500 L691 385 Q718 351 745 385 L745 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.2" opacity=".9"/>
+      <path d="M753 500 L753 385 Q780 351 807 385 L807 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.2" opacity=".9"/>
+      <path d="M815 500 L815 390 Q838 360 861 390 L861 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.1" opacity=".85"/>
+      <path d="M869 500 L869 395 Q890 368 911 395 L911 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".95" opacity=".7"/>
+      <path d="M919 500 L919 395 Q940 368 961 395 L961 500" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".95" opacity=".7"/>
+      <!-- Main central dome -->
+      <ellipse cx="720" cy="235" rx="105" ry="95" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.8" filter="url(#rgf)"/>
+      <ellipse cx="720" cy="210" rx="120" ry="90" fill="url(#rdg)" opacity=".6"/>
+      <!-- Half domes -->
+      <ellipse cx="605" cy="310" rx="65" ry="58" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1" opacity=".8"/>
+      <ellipse cx="835" cy="310" rx="65" ry="58" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1" opacity=".8"/>
+      <ellipse cx="500" cy="350" rx="48" ry="42" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".9" opacity=".65"/>
+      <ellipse cx="940" cy="350" rx="48" ry="42" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".9" opacity=".65"/>
+      <!-- Drum -->
+      <rect x="650" y="318" width="140" height="38" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1"/>
+      <!-- Finial -->
+      <line x1="720" y1="140" x2="720" y2="118" stroke="url(#rg2)" stroke-width="1.4"/>
+      <ellipse cx="720" cy="130" rx="7" ry="5" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.2"/>
+      <path d="M716 114 Q720 103 724 114 Q720 108 716 114" fill="none" stroke="#F5DA8E" stroke-width="2" filter="url(#rgf)"/>
+      <!-- 6 minarets (Blue Mosque has 6) -->
+      <rect x="418" y="150" width="35" height="350" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1"/>
+      <rect x="406" y="188" width="59" height="9" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1" opacity=".85"/>
+      <rect x="406" y="275" width="59" height="9" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1" opacity=".85"/>
+      <path d="M418 150 L435 100 L452 150" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.3"/>
+      <ellipse cx="435" cy="92" rx="12" ry="10" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.1"/>
+      <path d="M431 77 Q435 66 439 77 Q435 71 431 77" fill="none" stroke="#F5DA8E" stroke-width="1.8" filter="url(#rgf)"/>
+      <rect x="987" y="150" width="35" height="350" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1"/>
+      <rect x="975" y="188" width="59" height="9" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1" opacity=".85"/>
+      <rect x="975" y="275" width="59" height="9" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1" opacity=".85"/>
+      <path d="M987 150 L1004 100 L1021 150" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.3"/>
+      <ellipse cx="1004" cy="92" rx="12" ry="10" fill="url(#rf)" stroke="url(#rg2)" stroke-width="1.1"/>
+      <path d="M1000 77 Q1004 66 1008 77 Q1004 71 1000 77" fill="none" stroke="#F5DA8E" stroke-width="1.8" filter="url(#rgf)"/>
+      <!-- 4 outer minarets -->
+      <rect x="210" y="220" width="26" height="280" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".85" opacity=".65"/>
+      <path d="M210 220 L223 186 L236 220" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".9"/>
+      <ellipse cx="223" cy="179" rx="9" ry="7" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".9"/>
+      <path d="M220 166 Q223 158 226 166 Q223 161 220 166" fill="none" stroke="#F5DA8E" stroke-width="1.3"/>
+      <rect x="1204" y="220" width="26" height="280" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".85" opacity=".65"/>
+      <path d="M1204 220 L1217 186 L1230 220" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".9"/>
+      <ellipse cx="1217" cy="179" rx="9" ry="7" fill="url(#rf)" stroke="url(#rg2)" stroke-width=".9"/>
+      <path d="M1214 166 Q1217 158 1220 166 Q1217 161 1214 166" fill="none" stroke="#F5DA8E" stroke-width="1.3"/>
+      <!-- Ground -->
+      <rect x="0" y="488" width="1440" height="12" fill="url(#rf)" opacity=".9"/>
+      <ellipse cx="720" cy="490" rx="200" ry="12" fill="rgba(212,168,67,.07)"/>
+    </svg>
+    <div class="ev-top-glow-r"></div>
+    <div class="ev-body">
+      <span class="ev-emoji rv">🕺🪩</span>
+      <h2 class="ev-title ev-title-r rv">Grand<br/>Reception</h2>
+      <div class="ev-detail rv">26 July 2026<br/>6:30 PM Onwards</div>
+      <div class="ev-time-badge rv">Sunday · 6:30 PM</div><br/>
+      <a href="https://maps.app.goo.gl/UUnWfrcYRrZaSsDm6?g_st=ic" target="_blank" class="map-btn rv">📍 Open in Google Maps</a>
+    </div>
+  </div>
 </section>
 
-<section>
-
-<h2 class="section-title">
-Venue
-</h2>
-
-<div class="story">
-
-Jawhar Elite AR Tower<br>
-Vepery High Road<br>
-Periamet, Park Town<br>
-Chennai – 600003
-
-<br><br>
-
-<a class="map-btn"
-href="https://maps.app.goo.gl/Hp3LteYNjZCH36yz6"
-target="_blank">
-
-Open Google Maps
-
-</a>
-
-</div>
-
-</section>
-<section>
-
-<h2 class="section-title">
-Gallery
-</h2>
-
-<div class="gallery">
-
-<img src="./8e68da58-60d0-438f-b13c-7505d463b4d4.jpeg">
-
-<img src="./IMG_2814.jpeg">
-
-<img src="./IMG_2865.jpeg">
-
-<img src="./IMG_2871.jpeg">
-
-<img src="./IMG_3858.jpeg">
-
-<img src="./IMG_4075.jpeg">
-
-<img src="./IMG_4244.jpeg">
-
-<img src="./IMG_4251.jpeg">
-
-<img src="./IMG_5829.jpeg">
-
-<img src="./IMG_7390.jpeg">
-
-<img src="./IMG_7505.jpeg">
-
-</div>
-
-<section>
-
-<div class="couple-blessing">
-
-<p class="blessing-text">
-With the blessings of Allah SWT
-</p>
-
-<h2 class="couple-names">
-Mohamed Shahed
-<br>
-💍
-<br>
-Shaistha
-</h2>
-
-<p class="blessing-text">
-Request the honour of your presence
-</p>
-
-</div>
-
+<!-- ═══ FAMILY — Cordoba Great Mosque BG ═══ -->
+<section id="family">
+  <svg class="fam-monument" viewBox="0 0 1440 380" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="cg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".55"/><stop offset="60%" stop-color="#1A7A47" stop-opacity=".3"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <linearGradient id="cf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".9"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+    </defs>
+    <!-- Cordoba Mosque — endless arcade of arches with alternating red/white voussoirs -->
+    <rect x="0" y="200" width="1440" height="180" fill="url(#cf)" stroke="url(#cg)" stroke-width=".8" opacity=".7"/>
+    <!-- Row of iconic Cordoba double-tiered horseshoe arches -->
+    <path d="M40 380 L40 260 Q65 225 90 260 L90 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M98 380 L98 260 Q123 225 148 260 L148 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M156 380 L156 260 Q181 225 206 260 L206 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M214 380 L214 260 Q239 225 264 260 L264 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M272 380 L272 260 Q297 225 322 260 L322 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M330 380 L330 260 Q355 225 380 260 L380 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M388 380 L388 260 Q413 225 438 260 L438 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M446 380 L446 260 Q471 225 496 260 L496 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M504 380 L504 260 Q529 225 554 260 L554 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M562 380 L562 260 Q587 225 612 260 L612 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M620 380 L620 260 Q645 225 670 260 L670 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M678 380 L678 260 Q703 225 728 260 L728 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M736 380 L736 260 Q761 225 786 260 L786 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M794 380 L794 260 Q819 225 844 260 L844 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M852 380 L852 260 Q877 225 902 260 L902 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M910 380 L910 260 Q935 225 960 260 L960 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M968 380 L968 260 Q993 225 1018 260 L1018 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1026 380 L1026 260 Q1051 225 1076 260 L1076 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1084 380 L1084 260 Q1109 225 1134 260 L1134 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1142 380 L1142 260 Q1167 225 1192 260 L1192 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1200 380 L1200 260 Q1225 225 1250 260 L1250 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1258 380 L1258 260 Q1283 225 1308 260 L1308 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1316 380 L1316 260 Q1341 225 1366 260 L1366 380" fill="url(#cf)" stroke="url(#cg)" stroke-width=".9" opacity=".65"/>
+    <!-- Minaret of Cordoba (Giralda precursor) -->
+    <rect x="660" y="80" width="120" height="170" fill="url(#cf)" stroke="url(#cg)" stroke-width="1" opacity=".8"/>
+    <rect x="680" y="120" width="80" height="90" fill="none" stroke="url(#cg)" stroke-width=".6" opacity=".4"/>
+    <path d="M660 80 L720 40 L780 80" fill="url(#cf)" stroke="url(#cg)" stroke-width="1" opacity=".85"/>
+    <ellipse cx="720" cy="32" rx="14" ry="11" fill="url(#cf)" stroke="url(#cg)" stroke-width="1"/>
+    <path d="M716 17 Q720 6 724 17 Q720 11 716 17" fill="none" stroke="#F5DA8E" stroke-width="1.6"/>
+    <!-- Ground line -->
+    <rect x="0" y="368" width="1440" height="12" fill="url(#cf)" opacity=".9"/>
+  </svg>
+  <div class="fam-glow"></div>
+  <div class="fam-inner">
+    <div class="orn-row rv" style="justify-content:center"><div class="orn-line"></div><div class="orn-gem">✦ ◈ ✦</div><div class="orn-line r"></div></div>
+    <span class="sec-label rv">The Families</span>
+    <h2 class="sec-title rv">United by <em>love & faith</em></h2>
+    <div class="fam-grid">
+      <div class="fam-card rvl">
+        <div class="fam-card-gem">❋</div>
+        <div class="fam-title">Groom's Family</div>
+        <div class="fam-entry"><div class="fam-role">Father</div><div class="fam-name">A. Liaquath Ali</div></div>
+        <div class="fam-entry"><div class="fam-role">Mother</div><div class="fam-name">V. Farthimunnisa</div></div>
+      </div>
+      <div class="fam-card rvr">
+        <div class="fam-card-gem">❋</div>
+        <div class="fam-title">Bride's Family</div>
+        <div class="fam-entry"><div class="fam-role">Father</div><div class="fam-name">A. Yunus Khan</div></div>
+        <div class="fam-entry"><div class="fam-role">Mother</div><div class="fam-name">Y. Shama</div></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-
-<h2 class="section-title">RSVP</h2>
-
-<div class="rsvp-box">
-
-<p>
-We would be honoured to celebrate this special day with you.
-Kindly confirm your presence via WhatsApp.
-</p>
-
-<select id="rsvpContact" class="rsvp-select">
-
-<option value="https://wa.me/918248050004">
-Groom
-</option>
-
-<option value="https://wa.me/919444294937">
-Groom's family
-</option>
-
-</select>
-
-<br><br>
-
-<a id="rsvpButton" class="rsvp-main-btn">
-Send RSVP via WhatsApp
-</a>
-
-</div>
-
+<!-- ═══ COUPLE BANNER ═══ -->
+<section id="couple-banner">
+  <div class="orn-row rv" style="justify-content:center"><div class="orn-line"></div><div class="orn-gem" style="color:var(--g4)">✦ ✦ ✦</div><div class="orn-line r"></div></div>
+  <p class="couple-name-text rv">Mohamed Shahed 💍 Shaistha</p>
 </section>
 
-<section>
-
-<div class="card">
-
-<h2>
-May Allah Bless This marriage
-</h2>
-
-<p>
-"And among His signs is that He created for you spouses from among yourselves,
-that you may find tranquillity in them."
-</p>
-
-<p class="ayah-ref">
-Qur'an 30:21
-</p>
-
-<p>
-🤍 Ameen • Barakallahu Lakuma 🤍
-</p>
-
-</div>
-
+<!-- ═══ VENUE — Blue Mosque inspired ═══ -->
+<section id="venue">
+  <svg class="venue-monument" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="vg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".6"/><stop offset="55%" stop-color="#22A05B" stop-opacity=".3"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <linearGradient id="vgg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5DA8E" stop-opacity=".8"/><stop offset="100%" stop-color="#020A05" stop-opacity=".8"/></linearGradient>
+      <linearGradient id="vf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".92"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <filter id="vgf"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <!-- Jerusalem / Al-Aqsa style compound -->
+    <rect x="0" y="370" width="1440" height="50" fill="url(#vf)"/>
+    <!-- Long colonnaded hall -->
+    <rect x="100" y="260" width="1240" height="160" fill="url(#vf)" stroke="url(#vg)" stroke-width=".85" opacity=".65"/>
+    <!-- Arches along the hall -->
+    <path d="M120 420 L120 320 Q142 295 164 320 L164 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M172 420 L172 320 Q194 295 216 320 L216 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M224 420 L224 320 Q246 295 268 320 L268 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M276 420 L276 320 Q298 295 320 320 L320 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M328 420 L328 320 Q350 295 372 320 L372 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M380 420 L380 320 Q402 295 424 320 L424 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M432 420 L432 315 Q458 287 484 315 L484 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".9" opacity=".7"/>
+    <path d="M492 420 L492 315 Q518 287 544 315 L544 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".9" opacity=".7"/>
+    <path d="M552 420 L552 315 Q578 287 604 315 L604 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".9" opacity=".7"/>
+    <path d="M612 420 L612 310 Q642 278 672 310 L672 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".8"/>
+    <path d="M680 420 L680 310 Q710 278 740 310 L740 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".8"/>
+    <path d="M748 420 L748 310 Q778 278 808 310 L808 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".8"/>
+    <path d="M816 420 L816 315 Q842 287 868 315 L868 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".9" opacity=".7"/>
+    <path d="M876 420 L876 315 Q902 287 928 315 L928 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".9" opacity=".7"/>
+    <path d="M936 420 L936 315 Q962 287 988 315 L988 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".9" opacity=".7"/>
+    <path d="M996 420 L996 320 Q1018 295 1040 320 L1040 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M1048 420 L1048 320 Q1070 295 1092 320 L1092 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M1100 420 L1100 320 Q1122 295 1144 320 L1144 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M1152 420 L1152 320 Q1174 295 1196 320 L1196 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M1204 420 L1204 320 Q1226 295 1248 320 L1248 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <path d="M1256 420 L1256 320 Q1278 295 1300 320 L1300 420" fill="url(#vf)" stroke="url(#vgg)" stroke-width=".8" opacity=".6"/>
+    <!-- Dome of the Rock octagonal base -->
+    <rect x="580" y="188" width="280" height="120" fill="url(#vf)" stroke="url(#vg)" stroke-width="1" opacity=".8"/>
+    <!-- Gold dome -->
+    <ellipse cx="720" cy="188" rx="110" ry="100" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1.8" filter="url(#vgf)"/>
+    <radialGradient id="goldDome" cx="50%" cy="40%"><stop offset="0%" stop-color="#D4A843" stop-opacity=".25"/><stop offset="100%" stop-color="#D4A843" stop-opacity="0"/></radialGradient>
+    <ellipse cx="720" cy="165" rx="130" ry="95" fill="url(#goldDome)" opacity=".7"/>
+    <!-- Finial -->
+    <line x1="720" y1="88" x2="720" y2="66" stroke="url(#vgg)" stroke-width="1.4"/>
+    <ellipse cx="720" cy="78" rx="7" ry="5" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1.2"/>
+    <path d="M716 62 Q720 51 724 62 Q720 56 716 62" fill="none" stroke="#F5DA8E" stroke-width="2" filter="url(#vgf)"/>
+    <!-- Two flanking minarets -->
+    <rect x="448" y="170" width="32" height="250" fill="url(#vf)" stroke="url(#vg)" stroke-width=".95" opacity=".7"/>
+    <rect x="437" y="206" width="54" height="8" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".8"/>
+    <rect x="437" y="285" width="54" height="8" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".75"/>
+    <path d="M448 170 L464 126 L480 170" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1.2"/>
+    <ellipse cx="464" cy="118" rx="11" ry="9" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1.1"/>
+    <path d="M460 103 Q464 92 468 103 Q464 97 460 103" fill="none" stroke="#F5DA8E" stroke-width="1.8" filter="url(#vgf)"/>
+    <rect x="960" y="170" width="32" height="250" fill="url(#vf)" stroke="url(#vg)" stroke-width=".95" opacity=".7"/>
+    <rect x="949" y="206" width="54" height="8" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".8"/>
+    <rect x="949" y="285" width="54" height="8" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1" opacity=".75"/>
+    <path d="M960 170 L976 126 L992 170" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1.2"/>
+    <ellipse cx="976" cy="118" rx="11" ry="9" fill="url(#vf)" stroke="url(#vgg)" stroke-width="1.1"/>
+    <path d="M972 103 Q976 92 980 103 Q976 97 972 103" fill="none" stroke="#F5DA8E" stroke-width="1.8" filter="url(#vgf)"/>
+    <!-- Ground -->
+    <rect x="0" y="408" width="1440" height="12" fill="url(#vf)" opacity=".9"/>
+    <ellipse cx="720" cy="408" rx="250" ry="14" fill="rgba(212,168,67,.06)"/>
+  </svg>
+  <div class="venue-glow"></div>
+  <div class="venue-body">
+    <div class="orn-row rv" style="justify-content:center"><div class="orn-line"></div><div class="orn-gem">✦ ❋ ✦</div><div class="orn-line r"></div></div>
+    <span class="sec-label rv">The Venue</span>
+    <h2 class="sec-title rv">Join us here</h2>
+    <div class="venue-card rv">
+      <div class="vc-cn"></div><div class="vc-c2"></div>
+      <div class="venue-name">Jawhar Elite AR Tower</div>
+      <div class="venue-addr">Vepery High Road<br/>Periamet, Park Town<br/>Chennai – 600003</div>
+      <br/>
+      <a href="https://maps.app.goo.gl/Hp3LteYNjZCH36yz6" target="_blank" class="map-btn">📍 Open Google Maps</a>
+    </div>
+  </div>
 </section>
 
+<!-- ═══ RSVP ═══ -->
+<section id="rsvp">
+  <svg class="rsvp-monument" viewBox="0 0 1440 340" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="rmg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4DC68A" stop-opacity=".6"/><stop offset="65%" stop-color="#1A7A47" stop-opacity=".3"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+      <linearGradient id="rmf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#071810" stop-opacity=".92"/><stop offset="100%" stop-color="#020A05" stop-opacity="1"/></linearGradient>
+    </defs>
+    <rect x="0" y="320" width="1440" height="20" fill="url(#rmf)"/>
+    <!-- Simple elegant mosque silhouette row -->
+    <rect x="380" y="160" width="680" height="160" fill="url(#rmf)" stroke="url(#rmg)" stroke-width=".9" opacity=".7"/>
+    <ellipse cx="720" cy="160" rx="88" ry="80" fill="url(#rmf)" stroke="url(#rmg)" stroke-width="1.5" opacity=".85"/>
+    <ellipse cx="580" cy="200" rx="55" ry="50" fill="url(#rmf)" stroke="url(#rmg)" stroke-width="1" opacity=".7"/>
+    <ellipse cx="860" cy="200" rx="55" ry="50" fill="url(#rmf)" stroke="url(#rmg)" stroke-width="1" opacity=".7"/>
+    <line x1="720" y1="80" x2="720" y2="62" stroke="#F5DA8E" stroke-width="1.2" opacity=".7"/>
+    <path d="M716 58 Q720 48 724 58 Q720 52 716 58" fill="none" stroke="#F5DA8E" stroke-width="1.5" opacity=".8"/>
+    <rect x="336" y="100" width="28" height="220" fill="url(#rmf)" stroke="url(#rmg)" stroke-width=".9" opacity=".65"/>
+    <path d="M336 100 L350 66 L364 100" fill="url(#rmf)" stroke="url(#rmg)" stroke-width="1" opacity=".8"/>
+    <ellipse cx="350" cy="58" rx="10" ry="8" fill="url(#rmf)" stroke="url(#rmg)" stroke-width=".9" opacity=".75"/>
+    <path d="M347 45 Q350 37 353 45 Q350 40 347 45" fill="none" stroke="#F5DA8E" stroke-width="1.3" opacity=".75"/>
+    <rect x="1076" y="100" width="28" height="220" fill="url(#rmf)" stroke="url(#rmg)" stroke-width=".9" opacity=".65"/>
+    <path d="M1076 100 L1090 66 L1104 100" fill="url(#rmf)" stroke="url(#rmg)" stroke-width="1" opacity=".8"/>
+    <ellipse cx="1090" cy="58" rx="10" ry="8" fill="url(#rmf)" stroke="url(#rmg)" stroke-width=".9" opacity=".75"/>
+    <path d="M1087 45 Q1090 37 1093 45 Q1090 40 1087 45" fill="none" stroke="#F5DA8E" stroke-width="1.3" opacity=".75"/>
+    <rect x="0" y="310" width="1440" height="10" fill="url(#rmf)" opacity=".9"/>
+  </svg>
+  <div class="rsvp-body-wrap">
+    <div class="orn-row rv" style="justify-content:center"><div class="orn-line"></div><div class="orn-gem">✦ ✦ ✦</div><div class="orn-line r"></div></div>
+    <span class="sec-label rv">RSVP</span>
+    <h2 class="sec-title rv">We'd love to<br/><em>see you there</em></h2>
+    <p class="rsvp-p rv">We would be honoured to celebrate this special day with you. Kindly confirm your presence via WhatsApp.</p>
+    <a href="https://wa.me/918248050004?text=Assalamu%20Alaikum!%20I%20confirm%20my%20attendance%20at%20the%20Nikah%20of%20Mohamed%20Shahed%20%26%20Shaistha%20on%2026%20July%202026.%20JazakAllah%20Khair!" class="wa-btn rv" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Send RSVP via WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="orn-row rv" style="justify-content:center"><div class="orn-line"></div><div class="orn-gem" style="color:var(--g4)">✦ ❋ ✦</div><div class="orn-line r"></div></div>
+  <p class="ft-v rv">"And among His signs is that He created for you spouses from among yourselves, that you may find tranquillity in them."</p>
+  <p class="ft-r rv">— Qur'an 30:21</p>
+  <p class="ft-n rv">Mohamed Shahed 💍 Shaistha</p>
+  <p class="ft-a rv">🤍 Ameen · Barakallahu Lakuma · 26 July 2026 🤍</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
+/* ── MUSIC ── */
+const bgm=document.getElementById('bgm');
+const mbtn=document.getElementById('mbtn');
+let playing=false;
+function toggleMusic(){if(playing){bgm.pause();mbtn.classList.remove('playing')}else{bgm.play().catch(()=>{});mbtn.classList.add('playing')}playing=!playing}
+document.addEventListener('click',function ap(){if(!playing){bgm.volume=.35;bgm.play().then(()=>{mbtn.classList.add('playing');playing=true}).catch(()=>{})}document.removeEventListener('click',ap)},{once:true});
 
-const weddingDate =
-new Date("July 26, 2026 16:00:00").getTime();
+/* ── THREE.JS — 3D floating Islamic geometry ── */
+(function(){
+  const c=document.getElementById('three-cv');
+  const r=new THREE.WebGLRenderer({canvas:c,antialias:true,alpha:true});
+  r.setPixelRatio(Math.min(devicePixelRatio,2));r.setClearColor(0,0);
+  const scene=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
+  cam.position.set(0,0,18);
+  function rsz(){r.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+  rsz();addEventListener('resize',rsz);
+  // Stars
+  const sG=new THREE.BufferGeometry();
+  const sP=new Float32Array(1800*3),sC=new Float32Array(1800*3);
+  const pal=[[.96,.85,.55],[.3,.78,.54],[1,.95,.77],[.56,.96,.70]];
+  for(let i=0;i<1800;i++){const rr=300+Math.random()*500,th=Math.random()*Math.PI*2,ph=Math.acos(2*Math.random()-1);sP[i*3]=rr*Math.sin(ph)*Math.cos(th);sP[i*3+1]=rr*Math.sin(ph)*Math.sin(th);sP[i*3+2]=rr*Math.cos(ph);const p=pal[Math.floor(Math.random()*4)];sC[i*3]=p[0];sC[i*3+1]=p[1];sC[i*3+2]=p[2]}
+  sG.setAttribute('position',new THREE.BufferAttribute(sP,3));sG.setAttribute('color',new THREE.BufferAttribute(sC,3));
+  scene.add(new THREE.Points(sG,new THREE.PointsMaterial({size:1.5,vertexColors:true,transparent:true,opacity:.7})));
+  // Floating gems
+  const gems=[];
+  const geos=[new THREE.OctahedronGeometry(.2,0),new THREE.IcosahedronGeometry(.17,0),new THREE.TetrahedronGeometry(.19,0),new THREE.DodecahedronGeometry(.15,0)];
+  const cols=[0x22A05B,0xD4A843,0x4DC68A,0xE8C46A,0x115C34,0xF5DA8E];
+  for(let i=0;i<50;i++){const m=new THREE.Mesh(geos[i%4],new THREE.MeshBasicMaterial({color:cols[Math.floor(Math.random()*6)],wireframe:true,transparent:true,opacity:.3+Math.random()*.35}));m.position.set((Math.random()-.5)*32,(Math.random()-.5)*22,(Math.random()-.5)*18-4);m.rotation.set(Math.random()*Math.PI,Math.random()*Math.PI,0);m.userData={vx:(Math.random()-.5)*.007,vy:(Math.random()-.5)*.006,vz:(Math.random()-.5)*.004,rx:Math.random()*.013,ry:Math.random()*.01};scene.add(m);gems.push(m)}
+  scene.add(new THREE.AmbientLight(0x0A2E1A,2));
+  const gl1=new THREE.PointLight(0x22A05B,3,30);gl1.position.set(0,6,6);scene.add(gl1);
+  const gl2=new THREE.PointLight(0xD4A843,2.5,25);gl2.position.set(-8,-2,4);scene.add(gl2);
+  let mx=0,my=0,t=0;
+  addEventListener('mousemove',e=>{mx=(e.clientX/innerWidth-.5)*2;my=(e.clientY/innerHeight-.5)*2});
+  function anim(){requestAnimationFrame(anim);t+=.004;cam.position.x+=(mx*3-cam.position.x)*.04;cam.position.y+=(-my*1.5-cam.position.y)*.04;cam.lookAt(0,0,0);scene.rotation.y=t*.018;gems.forEach(g=>{g.position.x+=g.userData.vx;g.position.y+=g.userData.vy;g.position.z+=g.userData.vz;g.rotation.x+=g.userData.rx;g.rotation.y+=g.userData.ry;if(Math.abs(g.position.x)>17)g.userData.vx*=-1;if(Math.abs(g.position.y)>12)g.userData.vy*=-1;if(g.position.z>6||g.position.z<-16)g.userData.vz*=-1});gl1.intensity=2.5+Math.sin(t*2)*.9;r.render(scene,cam)}
+  anim();
+})();
 
-setInterval(function(){
+/* ── STARS ── */
+(function(){
+  const c=document.getElementById('star-cv'),ctx=c.getContext('2d');
+  function sz(){c.width=innerWidth;c.height=innerHeight}sz();addEventListener('resize',sz);
+  const stars=[];
+  for(let i=0;i<280;i++)stars.push({x:Math.random(),y:Math.random()*.8,r:Math.random()*1.5+.3,a:Math.random()*.7+.2,sp:Math.random()*.02+.006,ph:Math.random()*Math.PI*2,col:['#F5DA8E','#4DC68A','#FDFCF0','#E8C46A'][Math.floor(Math.random()*4)]});
+  let t=0;
+  function draw(){ctx.clearRect(0,0,c.width,c.height);t+=.01;stars.forEach(s=>{const a=s.a*(.45+.55*Math.sin(t*s.sp+s.ph));ctx.save();ctx.globalAlpha=a;ctx.fillStyle=s.col;ctx.shadowColor=s.col;ctx.shadowBlur=s.r*5;ctx.beginPath();ctx.arc(s.x*c.width,s.y*c.height,s.r,0,Math.PI*2);ctx.fill();ctx.restore()});requestAnimationFrame(draw)}
+  draw();
+})();
 
-const now = new Date().getTime();
+/* ── ROSE PETALS ── */
+(function(){
+  const c=document.getElementById('petal-cv'),ctx=c.getContext('2d');
+  function sz(){c.width=innerWidth;c.height=innerHeight}sz();addEventListener('resize',sz);
+  const cols=['rgba(212,168,67,','rgba(77,198,138,','rgba(245,218,142,','rgba(34,160,91,'];
+  const P=[];
+  class Petal{constructor(init){this.reset(init)}reset(init){this.x=Math.random()*innerWidth;this.y=init?Math.random()*innerHeight:-15;this.sz=Math.random()*6+3;this.vy=Math.random()*.4+.18;this.vx=(Math.random()-.5)*.22;this.rot=Math.random()*Math.PI*2;this.rv=(Math.random()-.5)*.02;this.a=Math.random()*.4+.18;this.col=cols[Math.floor(Math.random()*4)];this.sw=Math.random()*Math.PI*2;this.sws=Math.random()*.015+.006}tick(){this.sw+=this.sws;this.x+=this.vx+Math.sin(this.sw)*.4;this.y+=this.vy;this.rot+=this.rv;if(this.y>innerHeight+15)this.reset(false)}draw(){ctx.save();ctx.globalAlpha=this.a;ctx.translate(this.x,this.y);ctx.rotate(this.rot);ctx.fillStyle=this.col+this.a+')';ctx.beginPath();ctx.ellipse(0,0,this.sz*.45,this.sz,0,0,Math.PI*2);ctx.fill();ctx.restore()}}
+  for(let i=0;i<50;i++)P.push(new Petal(true));
+  function loop(){ctx.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.tick();p.draw()});requestAnimationFrame(loop)}
+  loop();
+})();
 
-const distance = weddingDate - now;
+/* ── SCROLL REVEAL ── */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.1});
+document.querySelectorAll('.rv,.rvl,.rvr,.rv-scale').forEach(el=>io.observe(el));
 
-document.getElementById("days").innerHTML =
-Math.floor(distance/(1000*60*60*24));
+/* ── COUNTDOWN ── */
+function tick(){
+  const diff=Math.max(0,new Date('2026-07-26T16:00:00')-new Date(new Date().getTime()+new Date().getTimezoneOffset()*60000+330*60000));
+  document.getElementById('cd-d').textContent=String(Math.floor(diff/86400000)).padStart(2,'0');
+  document.getElementById('cd-h').textContent=String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
+  document.getElementById('cd-m').textContent=String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+  document.getElementById('cd-s').textContent=String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
 
-document.getElementById("hours").innerHTML =
-Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-
-document.getElementById("minutes").innerHTML =
-Math.floor((distance%(1000*60*60))/(1000*60));
-
-document.getElementById("seconds").innerHTML =
-Math.floor((distance%(1000*60))/1000);
-
-},1000);
-
-</script>
-<script>
-const rsvpSelect = document.getElementById('rsvpContact');
-const rsvpButton = document.getElementById('rsvpButton');
-
-rsvpButton.addEventListener('click', () => {
-    window.open(rsvpSelect.value, '_blank');
-});
-</script>
-<script>
-window.addEventListener('load', function(){
-
-    setTimeout(function(){
-
-        document.getElementById('loader').style.display='none';
-
-    }, 1500);
-
-});
+/* ── LIGHTBOX ── */
+function openLb(el){document.getElementById('lbimg').src=el.querySelector('img').src;document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden'}
+function closeLb(){document.getElementById('lb').classList.remove('open');document.body.style.overflow=''}
+document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLb()});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
 </script>
 </body>
 </html>
